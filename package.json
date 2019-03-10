@@ -4,9 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --config webpack.config.dev.js --open --port 9000 --progress"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "vue": "^2.6.8",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.8"
+  },
+  "devDependencies": {
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
 }
